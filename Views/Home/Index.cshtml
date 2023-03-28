@@ -1,0 +1,153 @@
+﻿@model IEnumerable<Dsc_Core_WebAPI_YT.Models.TblDsc>
+
+@{
+    ViewData["Title"] = "Index";
+}<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-bordered tab-content table-striped-columns table-hover ">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CertificateClass)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CertificateTypes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CertificateValidity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PanNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MobileNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pincode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EkycId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EkycPin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AadharLast4Digits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DownloadKey)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AddressProof)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProof)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UploadPhoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Remark)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CertificateClass)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CertificateTypes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CertificateValidity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PanNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pincode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EkycId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EkycPin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AadharLast4Digits)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DownloadKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressProof)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProof)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UploadPhoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remark)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

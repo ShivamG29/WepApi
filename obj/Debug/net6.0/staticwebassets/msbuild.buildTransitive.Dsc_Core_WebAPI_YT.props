@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Dsc_Core_WebAPI_YT.props" />
+</Project>
